@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+.Footerstyle {
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+  width: 100%;
+  background-color: #0a0a0a;
+  color: rgb(88, 29, 170);
+  font-weight: 500;
+  text-align: center;
+}
+
+.Headerstyle {
+  width: 100%;
+  background: #3F4F44;
+  color: #E07A5F;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+  background-color: #A27B5C;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #1B4D3E;
+}
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item-input[type="checkbox"]:focus+label {
+  text-decoration: underline;
+}
+
+.item>label {
+  font-size: 0.90rem;
+  flex-grow: 1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 38px;
+  font-size: 1rem;
+  color: rgb(24, 72, 162);
+  cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addF {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.addLabel {
+  position: absolute;
+  left: -99999px;
+}
+
+.addInput[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100%-50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 0.3rem;
+}
+
+.addButton {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  color: #1A1A19;
+  cursor: pointer;
+  margin: 0.3rem;
+}
+
+.addButton :focus,
+.addButton :hover {
+  color: white;
+  background-color: #31511E;
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+  cursor: focus;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchInput[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 0.3rem;
+}
